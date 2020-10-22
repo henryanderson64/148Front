@@ -26,10 +26,10 @@ function CredsForm(props) {
 	
         let server = "http://localhost:8118/api"
         if (process.env.REACT_APP_REMOTE) { //set this in .env file: REACT_APP_REMOTE=1
-            server = "https://flask-backend-148.herokuapp.com/"
+            server = "https://flask-backend-148.herokuapp.com"
 	}
         if (process.env.NODE_ENV !== 'development') {
-            server = "https://flask-backend-148.herokuapp.com/"
+            server = "https://flask-backend-148.herokuapp.com"
 	}
 	console.log("server = "+server)
         const url = `${server}/keys`
